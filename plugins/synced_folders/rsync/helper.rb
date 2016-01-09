@@ -74,9 +74,9 @@ module VagrantPlugins
         rsh = [
           "ssh -p #{ssh_info[:port]} " +
           proxy_command +
-          "-o ControlMaster=auto " +
-          "-o ControlPath=#{controlpath} " +
-          "-o ControlPersist=10m " +
+          #"-o ControlMaster=auto " +
+          #"-o ControlPath=#{controlpath} " +
+          #"-o ControlPersist=10m " +
           "-o StrictHostKeyChecking=no " +
           "-o IdentitiesOnly=true " +
           "-o UserKnownHostsFile=/dev/null",
